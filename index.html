@@ -19,39 +19,39 @@
     <div class="c3" >
         <div>
             <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: white;">CALCULATOR </h1>
-            <input type="text" name="" id="" class="form-control">
+            <input type="text" name="" id="result" class="form-control">
         </div>
     <div class="d1">
-        <button 1 type="button" class="btn btn-light btn-lg c4" >1</button>
-        <button type="button" class="btn btn-light btn-lg c5">2</button>
-        <button type="button" class="btn btn-light btn-lg c6">3</button>
-        <button type="button" class="btn  btn-lg c7">AC</button>
+        <button  onclick="displaydata(1)" type="button" class="btn btn-light btn-lg c4" >1</button>
+        <button onclick="displaydata(2)" type="button" class="btn btn-light btn-lg c5">2</button>
+        <button onclick="displaydata(3)" type="button" class="btn btn-light btn-lg c6">3</button>
+        <button onclick="allclear()" type="button" class="btn  btn-lg c7">AC</button>
 
     </div>
     <div>
-        <button type="button" class="btn btn-light btn-lg c4">4</button>
-        <button type="button" class="btn btn-light btn-lg c5">5</button>
-        <button type="button" class="btn btn-light btn-lg c6">6</button>
-        <button type="button" class="btn  btn-lg c7">-</button>
+        <button onclick="displaydata(4)" type="button" class="btn btn-light btn-lg c4">4</button>
+        <button onclick="displaydata(5)" type="button" class="btn btn-light btn-lg c5">5</button>
+        <button onclick="displaydata(6)" type="button" class="btn btn-light btn-lg c6">6</button>
+        <button onclick="displaydata('-')" type="button" class="btn  btn-lg c7">-</button>
         
     </div>
     <div class="d1">
-        <button type="button" class="btn btn-light btn-lg c4">7</button>
-        <button type="button" class="btn btn-light btn-lg c5">8</button>
-        <button type="button" class="btn btn-light btn-lg c6">9</button>
-        <button type="button" class="btn  btn-lg c7">x</button>
+        <button onclick="displaydata(7)" type="button" class="btn btn-light btn-lg c4">7</button>
+        <button onclick="displaydata(8)" type="button" class="btn btn-light btn-lg c5">8</button>
+        <button onclick="displaydata(9)" type="button" class="btn btn-light btn-lg c6">9</button>
+        <button onclick="displaydata('*')" type="button" class="btn  btn-lg c7">x</button>
     </div>
     <div class="d1">
-        <button type="button" class="btn btn-light btn-lg c4"><i class="fa-solid fa-percent"></i></button>
-        <button type="button" class="btn btn-light btn-lg c5">0</button>
-        <button type="button" class="btn btn-light btn-lg c6"><i class="fa-solid fa-divide"></i></button>
-        <button type="button" class="btn  btn-lg c7">CE</button>
+        <button onclick="displaydata('%')" type="button" class="btn btn-light btn-lg c4"><i class="fa-solid fa-percent"></i></button>
+        <button onclick="displaydata(0)" type="button" class="btn btn-light btn-lg c5">0</button>
+        <button onclick="displaydata('/')" type="button" class="btn btn-light btn-lg c6"><i class="fa-solid fa-divide"></i></button>
+        <button onclick="allclear()"  type="button" class="btn  btn-lg c7">CE</button>
     </div>
     <div class="d1">
-        <button type="button" class="btn btn-light btn-lg c4">+</button>
-        <button type="button" class="btn btn-light btn-lg c5">.</button>
-        <button type="button" class="btn btn-light btn-lg c6">=</button>
-      <button  type="button" class="btn c7 btn-lg "><i class="fa-solid fa-delete-left"></i></button>  
+        <button onclick="displaydata('+')" type="button" class="btn btn-light btn-lg c4">+</button>
+        <button onclick="displaydata('.')" type="button" class="btn btn-light btn-lg c5">.</button>
+        <button onclick="equal()"  type="button" class="btn btn-light btn-lg c6">=</button>
+      <button onclick="backspace()"  type="button" class="btn c7 btn-lg "><i class="fa-solid fa-delete-left"></i></button>  
         
 
     </div>    
@@ -60,4 +60,5 @@
 
     
 </body>
+<script src="./calc.js"></script>
 </html>
